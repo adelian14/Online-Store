@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial scale=1.0">
+        <title>The Dock | Bag</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--header-->
+
+        <div class="header-blank">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><h2 class="logo-text" id="logo-header">The Dock</h2></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="all iphones.html">iPhone</a></li>
+                        <li><a href="all ipads.html">iPad</a></li>
+                        <li><a href="all mac.html">Mac</a></li>
+                        <li><a href="all watches.html">Apple Watch</a></li>
+                        <li><a href="bag.html"  class="active-nav">Bag</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" onclick="menutoggle()"></i>  
+            </div>
+        </div>
+
+        <!--bag-->
+
+        <div class="small-container bag-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bag-item">
+                            <div class="bag-img-box">
+                                <img src="images/all macs/macbook 16.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>MacBook Pro 16&#8220</p>
+                                <p class="small-text">$2499</p>
+                                <br>
+                                <a>Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$2499</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bag-item">
+                            <div class="bag-img-box">
+                                <img src="images/all watches/watch se.jpeg" alt="">
+                            </div>
+                            <div>
+                                <p>Watch SE</p>
+                                <p class="small-text">$329</p>
+                                <br>
+                                <a>Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$329</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bag-item">
+                            <div class="bag-img-box">
+                                <img src="images/all iphones/13 pro max.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>iPhone 13 Pro Max</p>
+                                <p class="small-text">$1099</p>
+                                <br>
+                                <a>Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$1099</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bag-item">
+                            <div class="bag-img-box">
+                                <img src="images/all ipads/ipad pro 11.jpeg" alt="">
+                            </div>
+                            <div>
+                                <p>ipad Pro 11&#8220</p>
+                                <p class="small-text">$899</p>
+                                <br>
+                                <a>Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$899</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bag-item">
+                            <div class="bag-img-box">
+                                <img src="images/all macs/imac pro.jpeg" alt="">
+                            </div>
+                            <div>
+                                <p>iMac Pro</p>
+                                <p class="small-text">$4999</p>
+                                <br>
+                                <a>Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$4999</td>
+                </tr>
+            </table>
+
+            <div class="total">
+                <table>
+                    <tr>
+                        <td>Total</td>
+                        <td>$9825</td>
+                    </tr>
+                </table>
+            </div>
+
+            <a class="btn" style="margin-left: 800px; margin-bottom: 10px;">Check Out</a>
+        </div>
+
+        <!--footer-->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Available For Android And IOS</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="play-store">
+                            <img src="images/app-store.png" alt="app-store">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2 class="logo-text" id="logo-footer">The Dock Store</h2>
+                        <p>An authorized apple store</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Our History</li>
+                            <li>Locations</li>
+                            <li>Return Policy</li>
+                            <li>Learn More</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">All rights reserved</p>
+            </div>
+        </div>
+
+        <!--javascript for menu-->
+
+        <script>
+            var MenuItems = document.getElementById("menuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight="200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+
+    </body>
+</html>

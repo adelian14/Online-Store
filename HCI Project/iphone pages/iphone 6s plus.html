@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial scale=1.0">
+        <title>The Dock | iPhone 6s Plus</title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--header-->
+
+        <div class="header-blank">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html"><h2 class="logo-text" id="logo-header">The Dock</h2></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="../all iphones.html" class="active-nav">iPhone</a></li>
+                        <li><a href="../all ipads.html">iPad</a></li>
+                        <li><a href="../all mac.html">Mac</a></li>
+                        <li><a href="../all watches.html">Apple Watch</a></li>
+                        <li><a href="../bag.html">Bag</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" onclick="menutoggle()"></i> 
+            </div>
+        </div>
+
+        <!--single product-->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="product-col">
+                    <img src="../images/all iphones/6s plus.jpg" alt="iphone 6s plus" width="100%" id="productImg">
+                </div>
+
+                <div class="product-col">
+                    <p>Home / Phones</p>
+                    <h1>iPhone 6s Plus</h1>
+                    <h4>$349</h4>
+                    <select>
+                        <option>16GB</option>
+                        <option>32GB</option>
+                        <option>128GB</option>
+                    </select>
+                    <a class="btn">Add to Bag</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>No, that is not the one that got bent</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Title-->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+        <!--products-->
+
+        <div class="small-container">
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="../ipad pages/ipad pro 11.html">
+                        <div class="img-box-2">
+                            <img src="../images/all ipads/ipad pro 11.jpeg" alt="ipad pro 11">
+                        </div>
+                        <h4>iPad Pro 11</h4>
+                        <p>$899</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="../watch pages/watch se.html">
+                        <div class="img-box">
+                            <img src="../images/watch se.jpeg" alt="apple watch">
+                        </div>
+                        <h4>Watch SE</h4>
+                        <p>$329</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="../mac pages/macbook pro 13.html">
+                        <div class="img-box-2">
+                            <img src="../images/all macs/macbook pro 13.jpg" alt="macbook">
+                        </div>
+                        <h4>MacBook Pro 13&#8220</h4>
+                        <p>$1299</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="iphone 13 pro max.html">
+                        <div class="img-box">
+                            <img src="../images/all iphones/13 pro max.jpg" alt="iphone 13 pro max">
+                        </div>
+                        <h4>iPhone 13 Pro Max</h4>
+                        <p>$1099</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--footer-->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Available For Android And IOS</p>
+                        <div class="app-logo">
+                            <img src="../images/play-store.png" alt="play-store">
+                            <img src="../images/app-store.png" alt="app-store">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2 class="logo-text" id="logo-footer">The Dock Store</h2>
+                        <p>An authorized apple store</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Our History</li>
+                            <li>Locations</li>
+                            <li>Return Policy</li>
+                            <li>Learn More</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">All rights reserved</p>
+            </div>
+        </div>
+
+    <!--javascript for menu-->
+
+        <script>
+            var MenuItems = document.getElementById("menuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight="200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+
+    <!--js for product gallery-->
+        
+        <script>
+            var productImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("smallImg")
+            smallImg[0].onclick = function(){
+                productImg.src=smallImg[0].src;
+            }
+            smallImg[1].onclick = function(){
+                productImg.src=smallImg[1].src;
+            }
+            smallImg[2].onclick = function(){
+                productImg.src=smallImg[2].src;
+            }
+            smallImg[3].onclick = function(){
+                productImg.src=smallImg[3].src;
+            }
+        </script>
+
+    </body>
+</html>

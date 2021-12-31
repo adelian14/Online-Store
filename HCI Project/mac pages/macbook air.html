@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial scale=1.0">
+        <title>The Dock | MacBook Air</title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--header-->
+
+        <div class="header-blank">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html"><h2 class="logo-text" id="logo-header">The Dock</h2></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="../all iphones.html">iPhone</a></li>
+                        <li><a href="../all ipads.html">iPad</a></li>
+                        <li><a href="../all mac.html" class="active-nav">Mac</a></li>
+                        <li><a href="../all watches.html">Apple Watch</a></li>
+                        <li><a href="../bag.html">Bag</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" onclick="menutoggle()"></i> 
+            </div>
+        </div>
+
+        <!--single product-->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="product-col">
+                    <img src="../images/all macs/macbook air.jpeg" alt="macbook air" width="100%" id="productImg">
+                </div>
+
+                <div class="product-col">
+                    <p>Home / Macs</p>
+                    <h1>MacBook Air</h1>
+                    <h4>$999</h4>
+                    <select>
+                        <option>256GB</option>
+                        <option>512GB</option>
+                        <option>1TB</option>
+                        <option>2TB</option>
+                    </select>
+                    <a class="btn">Add to Bag</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Apple M1 chip<br>
+                        13.3-inch LED-backlit display with IPS technology<br>
+                        Touch ID sensor<br>
+                        Extremely light yet so powerful</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Title-->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+        <!--products-->
+
+        <div class="small-container">
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="../iphone pages/iphone 13.html">
+                        <div class="img-box">
+                            <img src="../images/all iphones/13.jpg" alt="iphone 13">
+                        </div>
+                        <h4>iPhone 13</h4>
+                        <p>$799</p>
+                    </a>
+                </div>
+                
+                <div class="col-4">
+                    <a href="imac 27.html">
+                        <div class="img-box-2">
+                            <img src="../images/all macs/imac 27 2.jpg" alt="ipad pro 11">
+                        </div>
+                        <h4>iMac 27&#8220</h4>
+                        <p>$1799</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="../watch pages/watch 7.html">
+                        <div class="img-box">
+                            <img src="../images/watch 7.jpeg" alt="apple watch">
+                        </div>
+                        <h4>Watch Series 7</h4>
+                        <p>$769</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="../iphone pages/iphone 12 pro max.html">
+                        <div class="img-box">
+                            <img src="../images/all iphones/12 pro max.jpg" alt="iphone 12 pro max">
+                        </div>
+                        <h4>iPhone 12 Pro Max</h4>
+                        <p>$949</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--footer-->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Available For Android And IOS</p>
+                        <div class="app-logo">
+                            <img src="../images/play-store.png" alt="play-store">
+                            <img src="../images/app-store.png" alt="app-store">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2 class="logo-text" id="logo-footer">The Dock Store</h2>
+                        <p>An authorized apple store</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Our History</li>
+                            <li>Locations</li>
+                            <li>Return Policy</li>
+                            <li>Learn More</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">All rights reserved</p>
+            </div>
+        </div>
+
+    <!--javascript for menu-->
+
+        <script>
+            var MenuItems = document.getElementById("menuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight="200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+
+    <!--js for product gallery-->
+        
+        <script>
+            var productImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("smallImg")
+            smallImg[0].onclick = function(){
+                productImg.src=smallImg[0].src;
+            }
+            smallImg[1].onclick = function(){
+                productImg.src=smallImg[1].src;
+            }
+            smallImg[2].onclick = function(){
+                productImg.src=smallImg[2].src;
+            }
+            smallImg[3].onclick = function(){
+                productImg.src=smallImg[3].src;
+            }
+        </script>
+
+    </body>
+</html>
